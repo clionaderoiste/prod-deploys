@@ -21,7 +21,7 @@ We propose to separate the deployment and release process. All versions on the U
 production, testing could then be done post deployment against production services and infrastructure. Once we were happy 
 with a version of the UI application it could be tagged as the live version and users could be directed to it. 
 
-We have some diagrams that describe the rough user flow and iterative architectures.
+We have some diagrams that describe the rough user flow and iterative architectures. The diagrams are available [here](https://www.lucidchart.com/invitations/accept/d1cc8c97-3e2f-4d94-ba37-91add859ff16) on Lucid Chart.
 
 [![Version one of the Dos Equis Architecture](./images/DosEquisArchitecture01.png)](./images/DosEquisArchitecture01.png)
 
