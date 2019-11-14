@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
 var list = $('#users_list')
-console.log('success');
 
 $.getJSON('js/data.json', function(data){
     $.each(data.users, function(key, val) {

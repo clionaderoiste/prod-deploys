@@ -7,4 +7,9 @@ router.get("/", function(req, res, next) {
   res.redirect("/" + version);
 });
 
+/** Goto the Login Page */
+router.get("/login", function(req, res){
+    res.redirect("/login");
+});
+
 module.exports = router;
