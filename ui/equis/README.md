@@ -2,21 +2,21 @@
 
 Please see [the main Readme for the project statement](../../README.md)
 
-This UI application was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). We have not ejected.  
+This UI application was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). We have not ejected.
 
 The project follows a pattern where every build to be deployed will be versioned. Semver was chosen for use during the Hackathon
 for simplicity but we would advise using something that people can't guess for production systems e.g. commit hash or guid.
 
 ### Project structure
 
-* `/src` - the source files for the React application  
-  * `App.js` - is the main application file
-* `/public` - the index file and other public asssests
-* `versions` - this is the output folder for versioned builds, each build of a new version will result in a folder being created 
-for that build version. E.g. version `1.2.1` would be built and output to `versions/1.2.1`
-* `build` - if you runt he standard build command the build will be output here. This folder is gitignored and should not be checked in. 
+- `/src` - the source files for the React application
+  - `App.js` - is the main application file
+- `/public` - the index file and other public asssests
+- `versions` - this is the output folder for versioned builds, each build of a new version will result in a folder being created
+  for that build version. E.g. version `1.2.1` would be built and output to `versions/1.2.1`
+- `build` - if you runt he standard build command the build will be output here. This folder is gitignored and should not be checked in.
 
-## Installation 
+## Installation
 
 Run `npm install` and then see commands below for running or building the application.
 
@@ -36,14 +36,14 @@ This variable can be referenced in the application itself:
 ```
 
 The value of the variable is only updated at build time. So if you are running `yarn start`
-and you bump the application version you will need to stop and restart the application 
+and you bump the application version you will need to stop and restart the application
 by running `yarn start` again.
 
-See `npm run version-build` below to see how to create a versioned production build. 
+See `npm run version-build` below to see how to create a versioned production build.
 
 ## Available Scripts
 
-Note: some scripts are documented using `npm run` rather than `yarn` as that is what was confirmed was working during the 
+Note: some scripts are documented using `npm run` rather than `yarn` as that is what was confirmed was working during the
 Hackathon. These commands should work fine with `yarn`.
 
 In the project directory, you can run:
@@ -55,8 +55,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-
 
 ### `yarn test`
 
@@ -75,22 +73,29 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run version-build`
 
-This command is used to created a versioned build of the application. 
+This command is used to created a versioned build of the application.
 
 It does this by running:
-* `yarn bump`: bumps the version of the application using `npm version patch` 
-* `yarn build`: runs a standard build that outputs to `/build`
-* `yarn move-build`: copies the contents of build to `versions/[npm version number]`
 
-Before you do this you need to make sure that you have no un-commited changes as this will cause the npm version patch 
+- `yarn bump`: bumps the version of the application using `npm version patch`
+- `yarn build`: runs a standard build that outputs to `/build`
+- `yarn move-build`: copies the contents of build to `versions/[npm version number]`
+
+Before you do this you need to make sure that you have no un-commited changes as this will cause the npm version patch
 to fail.
 
-Note: the bump, build and copy steps are deliberately separate commands that are then combined into one. Have them a 
+Note: the bump, build and copy steps are deliberately separate commands that are then combined into one. Have them a
 single `&&` command was tried but this led to the build version number being `$npm_version_number` -1.
+
+### `yarn activate`
+
+Add the built version to the end of the rules.json versions element. The last entry here is the active version which will be used as the default.
+
+This executes `versionBump.js` which rewrites `rules.json` with the new version information.
 
 ### `npm run bump`
 
-Bumps the version of the application using `npm version patch` 
+Bumps the version of the application using `npm version patch`
 
 ### `npm run move-build`
 
