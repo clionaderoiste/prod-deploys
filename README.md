@@ -47,6 +47,8 @@ Product/design review
 
 ### Server
 
+* A NodeJS webserver is used to route between application versions, more details can be found [here](./server/server.md)
+
 ### UI
 
 * Equis
