@@ -11,6 +11,7 @@
     "start": "react-scripts start",
     "bump": "echo 'Bumping project version to: ' && npm version patch",
     "version-build": "npm run bump && npm run build && npm run move-build",
+    "activate": "echo Releasing build && node versionBump.js",
     "build": "react-scripts build",
     "move-build": "echo Copying build to versions/$npm_package_version && cp -r build versions/$npm_package_version",
     "test": "react-scripts test",
