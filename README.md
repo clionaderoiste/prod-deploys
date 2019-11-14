@@ -43,6 +43,17 @@ release either to other customers or for testing
 CSI/issue resolution - specific fixes could be tested by support and/or customers before deploying
 Product/design review
 
+## Technical information
+
+### Server
+
+### UI
+
+* Equis
+  * A basic application made using create react app that supports deploying multiple version fo the application
+  * See [/equis](./ui/equis/README.md) for more information
+* Login - TODO
+
 ## Ways of working
 
 We are using a project board on this repo to track issues, you can access it [here](https://scm.eng.hmhco.com/deroistec/dos-equis-project/projects/1)
