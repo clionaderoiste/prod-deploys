@@ -53,6 +53,8 @@ We also created a simple login application and some user personas.
 
 A NodeJS server was built to handle routing. If a specific version of the application has been requested the server redirects the user to that version. If a version is not passed, the server looks the user up in a simple rules engine to see if they should be directed to a specific version. If no rule for that user is found, they are redirected to the current version. 
 
+As releasing a version now simply becomes updating the active version number releasing would take seconds. As indeed would rolling back. 
+
 For the Hackathon, we used a simple JSON file located on the server as our 'database'. For a production system, this would need to be changed to a robust database.
 
 We believe it would be practical to implement this for the future. It would necessitate changing how we build and deploy UI applications. The service or application used to route users would have to be extremely performant - perhaps something like a gateway could be used? Features would need to be implemented to automate deployments and rollback procedures. 
