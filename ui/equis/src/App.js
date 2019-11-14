@@ -1,16 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './images/DosEquis.jpeg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header gridLayout">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>This is the active version</p>
+        <p className="App-version">This is application version {process.env.REACT_APP_VERSION}</p>
       </header>
     </div>
   );
