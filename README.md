@@ -45,6 +45,41 @@ Product/design review
 
 ## Technical information
 
+A UI application was created using React. This application is given a different version at build time - for the Hackathon, we used npm scripts to apply semver to the app and store it in a versioned build folder.  Versioning using semver is not sufficiently safe for a production environment, using something more opaque like a guid or commit hashes would be better.  
+
+We used Git as our file system, but any scalable static serve file system could be used for a production system, e.g. S3. 
+
+We also created a simple login application and some user personas.  
+
+A NodeJS server was built to handle routing. If a specific version of the application has been requested the server redirects the user to that version. If a version is not passed, the server looks the user up in a simple rules engine to see if they should be directed to a specific version. If no rule for that user is found, they are redirected to the current version. 
+
+For the Hackathon, we used a simple JSON file located on the server as our 'database'. For a production system, this would need to be changed to a robust database.
+
+We believe it would be practical to implement this for the future. It would necessitate changing how we build and deploy UI applications. The service or application used to route users would have to be extremely performant - perhaps something like a gateway could be used? Features would need to be implemented to automate deployments and rollback procedures. 
+
+We have an open question as to how we would manage to version with a large team of UI engineers, but we believe this to be solvable. 
+
+Considerations would have to be given to usages of the INT and Cert environments by other stakeholders.
+
+### How to run the application
+
+To run the application using one of the pre-built UI applications:
+* Clone this repo
+* Install the Node server
+  ``` 
+  cd server
+  npm install
+  ```
+* Run the Node server
+  ```
+  npm start
+  ```
+* Open the login page in your browser `http://localhost:8000/login/`
+* Choose you persona - you should be redirected a version of the UI application.
+
+If you want to buid your own version of the application see the Equis section below.
+If you want to add personas please see the Login section below
+
 ### Server
 
 * A NodeJS webserver is used to route between application versions, more details can be found [here](./server/server.md)
@@ -54,7 +89,7 @@ Product/design review
 * Equis
   * A basic application made using create react app that supports deploying multiple version fo the application
   * See [/equis](./ui/equis/README.md) for more information
-* Login - TODO
+* Login - A basic login in application was created using HTML and jQuery. More information can be found [here](./ui/userslist/login.md) 
 
 ## Ways of working
 
