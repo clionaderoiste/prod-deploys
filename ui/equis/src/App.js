@@ -10,7 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>This is application version {process.env.REACT_APP_VERSION}</p>
+        <p>This is the active version</p>
       </header>
     </div>
   );
