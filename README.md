@@ -89,7 +89,7 @@ If you want to add personas please see the Login section below
 * Equis
   * A basic application made using create react app that supports deploying multiple version fo the application
   * See [/equis](./ui/equis/README.md) for more information
-* Login - A basic login in application was created using HTML and jQuery. More information can be found [here](./ui/userlist/login.md) 
+* Login - A basic login in application was created using HTML and jQuery. More information can be found [here](./ui/userslist/login.md) 
 
 ## Ways of working
 
