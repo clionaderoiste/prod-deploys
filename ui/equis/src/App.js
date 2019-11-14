@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './images/DosEquis.jpeg';
-import beta from './images/Beta.png';
+import beta from './images/beta.png';
 import './App.css';
 
 function App() {

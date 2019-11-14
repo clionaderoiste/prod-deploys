@@ -8,7 +8,8 @@
 }
 
 .App-beta {
-  width: 20vmin;
+  width: 200px;
+  padding-right:40px;
 }
 
 .App-header {
@@ -23,7 +24,8 @@
 }
 
 .App-version {
-  font-size: 2.5em;
+  font-size: 1em;
+  padding-right:40px;
 }
 
 .gridLayout {
