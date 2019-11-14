@@ -4,7 +4,8 @@ Please see [the main Readme for the project statement](../../README.md)
 
 This UI application was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). We have not ejected.  
 
-The project follows a pattern where every build to be deployed will be versioned. 
+The project follows a pattern where every build to be deployed will be versioned. Semver was chosen for use during the Hackathon
+for simplicity but we would advise using something that people can't guess for production systems e.g. commit hash or guid.
 
 ### Project structure
 
