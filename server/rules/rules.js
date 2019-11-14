@@ -1,8 +1,8 @@
 var rules = require("./rules.json");
 
 module.exports = {
-  getVersion: function(user) {
+  getVersion: function(version, user) {
     console.log(user);
-    return rules[user] || "active";
+    return version || (rules[user] || "active");
   }
 };

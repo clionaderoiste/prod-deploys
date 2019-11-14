@@ -4,7 +4,7 @@ var rules = require("../rules/rules");
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
-  let version = req.query.version || rules.getVersion(req.query.user);
+  let version = rules.getVersion(version, user);
   res.redirect("/" + version);
 });
 
