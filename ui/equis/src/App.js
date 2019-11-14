@@ -7,7 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header gridLayout">
         <img src={logo} className="App-logo" alt="logo" />
-        <p className="App-version">This is application version {process.env.REACT_APP_VERSION}</p>
+        <video width="800" controls autoplay>
+          <source src="video/TrustIsPermanent.mov" type="video/mp4" />
+        </video>
       </header>
     </div>
   );
