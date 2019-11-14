@@ -9,7 +9,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "bump": "echo 'Bumping project version to: ' && npm version patch",
+    "version-build": "npm run bump && npm run build",
     "build": "react-scripts build",
+    "postbuild": "echo Copying build to versions/$npm_package_version && cp -r build versions/$npm_package_version",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
