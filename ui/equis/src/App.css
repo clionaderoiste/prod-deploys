@@ -4,10 +4,11 @@
 
 .App-logo {
   height: 40vmin;
+  padding-left: 160px;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0066cc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,6 +18,11 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.App-version {
+  font-size: 2.5em;
+}
+
+.gridLayout {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }

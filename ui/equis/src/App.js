@@ -5,9 +5,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header gridLayout">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>This is application version {process.env.REACT_APP_VERSION}</p>
+        <p className="App-version">This is application version {process.env.REACT_APP_VERSION}</p>
       </header>
     </div>
   );
