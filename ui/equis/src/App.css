@@ -7,6 +7,10 @@
   padding-left: 160px;
 }
 
+.App-beta {
+  width: 20vmin;
+}
+
 .App-header {
   background-color: #0066cc;
   min-height: 100vh;
