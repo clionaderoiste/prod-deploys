@@ -1,6 +1,6 @@
 # The Dos Equis Project Hackathon 
 
-## The project
+## The Project
 
 ### Problem statement:
 Releasing new code to our customers is a slow process. Currently we have 3 environments (including 2 staging environments) 
@@ -42,6 +42,8 @@ For demos and locked sites, this could be utilised to test against certain versi
 release either to other customers or for testing
 CSI/issue resolution - specific fixes could be tested by support and/or customers before deploying
 Product/design review
+
+The Hackton [business plan](./Business%20Plan%20-%20Dos%20Equis%20Project.docx) and [presentation notes](./Presentation.docx) also contain some more information. 
 
 ## Technical information
 
