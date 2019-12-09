@@ -52,7 +52,7 @@ We are using a project board on this repo to track issues, you can access it [he
 * We will keep a phone line open in Dublin so people can drop in and out. We will try Webex first and fall back to 
 something else if it doesn’t work.
 * We will over communicate online so as to ensure those not in the room are kept in the loop.
-* We will document in the code base - i.e. md files along side code.
+* We will document in the code base - i.e. md files alongside code.
 * We will use the project board in this github repo for planning and issue tracking. See above.
 * We will branches and PRs just so we don’t get in each others way.
 
@@ -95,7 +95,7 @@ To run the application using one of the pre-built UI applications:
 * Open the login page in your browser `http://localhost:8000/login/`
 * Choose you persona - you should be redirected a version of the UI application.
 
-If you want to buid your own version of the application see the Equis section below.
+If you want to build your own version of the application see the Equis section below.
 If you want to add personas please see the Login section below
 
 ### Server
