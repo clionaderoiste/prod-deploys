@@ -76,6 +76,9 @@ We have an open question as to how we would manage to version with a large team 
 
 Considerations would have to be given to usages of the INT and Cert environments by other stakeholders.
 
+### Future considerations
+
+For some thoughts on future considerations please see [Future Considerations](./ui/FutureConsiderations)
 ### How to run the application
 
 To run the application using one of the pre-built UI applications:
