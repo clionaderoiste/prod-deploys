@@ -1,15 +1,13 @@
 # The Dos Equis Project Hackathon 
 
-## The Project
-
-### Problem statement:
+## Problem statement:
 Releasing new code to our customers is a slow process. Currently we have 3 environments (including 2 staging environments) 
 that are on our path to Production. These staging environments have high contention and are less stable.
 Our proposal is to look at separating deployment and release.
 
 Note: there is a team that will tackle this but we feel it would be interesting to see how multiple teams might tackle it
 
-#### Expanded problem statement: 
+### Expanded problem statement: 
 Currently UI applications have to be built and then deployed through 3 environments, two staging environments and then to 
 production. Testing in complicated by staging environments being less stable than production resulting in test failures 
 due to service degradation, outage or errors. These add considerable time to our build and deploy procedures. 
@@ -45,7 +43,20 @@ Product/design review
 
 The Hackton [business plan](./Business%20Plan%20-%20Dos%20Equis%20Project.docx) and [presentation notes](./Presentation.docx) also contain some more information. 
 
-## Technical information
+## Ways of working
+
+We are using a project board on this repo to track issues, you can access it [here](https://scm.eng.hmhco.com/deroistec/dos-equis-project/projects/1)
+
+### Norms
+
+* We will keep a phone line open in Dublin so people can drop in and out. We will try Webex first and fall back to 
+something else if it doesn’t work.
+* We will over communicate online so as to ensure those not in the room are kept in the loop.
+* We will document in the code base - i.e. md files along side code.
+* We will use the project board in this github repo for planning and issue tracking. See above.
+* We will branches and PRs just so we don’t get in each others way.
+
+## Technical solution
 
 A UI application was created using React. This application is given a different version at build time - for the Hackathon, we used npm scripts to apply semver to the app and store it in a versioned build folder.  Versioning using semver is not sufficiently safe for a production environment, using something more opaque like a guid or commit hashes would be better.  
 
@@ -95,16 +106,5 @@ If you want to add personas please see the Login section below
   * See [/equis](./ui/equis/README.md) for more information
 * Login - A basic login in application was created using HTML and jQuery. More information can be found [here](./ui/userslist/login.md) 
 
-## Ways of working
 
-We are using a project board on this repo to track issues, you can access it [here](https://scm.eng.hmhco.com/deroistec/dos-equis-project/projects/1)
-
-### Norms
-
-* We will keep a phone line open in Dublin so people can drop in and out. We will try Webex first and fall back to 
-something else if it doesn’t work.
-* We will over communicate online so as to ensure those not in the room are kept in the loop.
-* We will document in the code base - i.e. md files along side code.
-* We will use the project board in this github repo for planning and issue tracking. See above.
-* We will branches and PRs just so we don’t get in each others way.
 
